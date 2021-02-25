@@ -7,6 +7,7 @@ Thesis project
 2. sudo apt install npm
 3. Проверка версий:
   
-  3.1 nodejs -v
- 
-  3.2 npm -v
+    3.1 nodejs -v
+
+    3.2 npm -v
+
