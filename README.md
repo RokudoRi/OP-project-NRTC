@@ -11,3 +11,6 @@ Thesis project
 
     3.2 npm -v
 
+Библиотека onoff:
+
+https://github.com/fivdi/onoff
