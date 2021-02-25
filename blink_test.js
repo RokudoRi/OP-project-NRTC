@@ -1,19 +1,13 @@
-var Gpio = require('onoff').Gpio;
-var LED = new Gpio(4, 'out');
-var blinkInterval = setInterval(blinkLED, 250);
+'use strict';
 
-function blinkLED() {
-  if (LED.readSync() === 0) {
-    LED.writeSync(1);
-  } else {
-    LED.writeSync(0);
-  }
-}
+const Gpio = require('../onoff').Gpio; // Gpio class
+const led = new Gpio(17, 'out');       // Export GPIO17 as an output
 
-function endBlink() {
-  clearInterval(blinkInterval);
-  LED.writeSync(0);
-  LED.unexport();
-}
+// Toggle the state of the LED connected to GPIO17 every 200ms
+const iv = setInterval(_ => led.writeSync(led.readSync() ^ 1), 200);
 
-setTimeout(endBlink, 5000);
+// Stop blinking the LED after 5 seconds
+setTimeout(_ => {
+  clearInterval(iv); // Stop blinking
+  led.unexport();    // Unexport GPIO and free resources
+}, 5000);
