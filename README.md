@@ -14,3 +14,7 @@ Thesis project
 Библиотека onoff:
 
 https://github.com/fivdi/onoff
+
+Полезные ссылки:
+
+https://github.com/matrix-org/matrix-js-sdk
