@@ -13,16 +13,24 @@ Thesis project
 
 Библиотека onoff:
 
+
 https://github.com/fivdi/onoff
+
 
 Библиотека lcdi2c:
 
+
 https://github.com/craigmw/lcdi2c
+
 
 О функциях библиотеки lcdi2c можно посмотреть здесь:
 
+
 https://github.com/wilberforce/lcd-pcf8574
 
+
 Полезные ссылки:
+
 https://orangepi.su/content.php?p=112 - настройка работы интерфейсов opi
+
 https://github.com/matrix-org/matrix-js-sdk - набор инструментов для matrix
